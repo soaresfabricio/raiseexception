@@ -8,6 +8,7 @@
   <sprites name="sprites">
     <sprite>sprites\sprite1</sprite>
     <sprite>sprites\Main_idle</sprite>
+    <sprite>sprites\sprite5</sprite>
   </sprites>
   <backgrounds name="background"/>
   <paths name="paths"/>

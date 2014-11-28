@@ -8,6 +8,8 @@
   <sprites name="sprites">
     <sprites name="System">
       <sprite>sprites\spr_collisor</sprite>
+      <sprite>sprites\spr_checkPoint</sprite>
+      <sprite>sprites\spr_redA</sprite>
     </sprites>
     <sprites name="hero">
       <sprite>sprites\spr_heroIdle</sprite>
@@ -21,6 +23,7 @@
     <sprites name="Ground">
       <sprite>sprites\spr_caveGround1</sprite>
       <sprite>sprites\spr_caveGround2</sprite>
+      <sprite>sprites\spr_redGround</sprite>
     </sprites>
   </sprites>
   <backgrounds name="background">
@@ -33,6 +36,8 @@
   <objects name="objects">
     <objects name="System">
       <object>objects\obj_collisor</object>
+      <object>objects\obj_checkPoint</object>
+      <object>objects\obj_redA</object>
     </objects>
     <objects name="Hero">
       <object>objects\obj_Hero</object>
@@ -41,6 +46,7 @@
     <objects name="Ground">
       <object>objects\obj_caveGround1</object>
       <object>objects\obj_caveGround2</object>
+      <object>objects\obj_redGround</object>
     </objects>
   </objects>
   <rooms name="rooms">

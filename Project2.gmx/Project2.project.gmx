@@ -15,6 +15,8 @@
       <sprite>sprites\spr_heroRun</sprite>
       <sprite>sprites\spr_heroJump</sprite>
       <sprite>sprites\spr_heroFall</sprite>
+      <sprite>sprites\spr_heroDash</sprite>
+      <sprite>sprites\spr_heroClone</sprite>
     </sprites>
     <sprites name="Ground">
       <sprite>sprites\spr_caveGround1</sprite>
@@ -34,6 +36,7 @@
     </objects>
     <objects name="Hero">
       <object>objects\obj_Hero</object>
+      <object>objects\obj_heroClone</object>
     </objects>
     <objects name="Ground">
       <object>objects\obj_caveGround1</object>

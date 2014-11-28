@@ -32,10 +32,16 @@ phy_fixed_rotation = true ;
 
 move_speed = 300 ;
 move_speedRun = 450 ;
-running = false ;
 max_xspeed = 3 ;
+
 jump = false ;
-jump_force = -80 ;
+
+min_jump_force = 40
+jump_force = min_jump_force ;
+max_jump_force = 80 ;
+
+dashing = false ;
+dash_speed = 12 ;
 
 </string>
           </argument>
@@ -60,29 +66,53 @@ jump_force = -80 ;
           <argument>
             <kind>1</kind>
             <string>
-if(keyboard_check(vk_shift)) {
+if( keyboard_check(vk_shift) &amp;&amp; dashing == false ) {
     max_xspeed = 6 ;
+}else if(dashing == true){
+    max_xspeed = 12 ;
 }else{
     max_xspeed = 3 ;
 }
 
+if(keyboard_check(vk_space) &amp;&amp; jump_force &lt; max_jump_force ) {      
+        jump_force = jump_force  + 0.5;       
+}
+
 phy_speed_x = max(min(phy_speed_x, max_xspeed), -max_xspeed ) ;
 
+if(dashing == true &amp;&amp; jump == true &amp;&amp; phy_speed_y == 0 ){
+    jump = false ;
+    dashing = false ;
+}
 
-if(((phy_speed_x &gt; 0.1 &amp;&amp; phy_speed_x &lt; 2) || (phy_speed_x &lt; -0.1 &amp;&amp; phy_speed_x &gt; -2 )) &amp;&amp; jump == false ) {
+if(((phy_speed_x &gt; 0.1 &amp;&amp; phy_speed_x &lt; 2) || (phy_speed_x &lt; -0.1 &amp;&amp; phy_speed_x &gt; -2 )) &amp;&amp; jump == false &amp;&amp; dashing == false ) {
+
     sprite_index = spr_heroWalk ;
     image_speed = abs(phy_speed_x) / 10 ;
     
-}else if((phy_speed_x &gt; 2 || phy_speed_x &lt; -2) &amp;&amp; jump == false ){
+}else if((phy_speed_x &gt; 2 || phy_speed_x &lt; -2) &amp;&amp; jump == false &amp;&amp; dashing == false){
+
     sprite_index = spr_heroRun ;
     image_speed = abs( phy_speed_x ) / 20 ;
-}else if(jump = true &amp;&amp; phy_speed_y &lt; 0){
-    sprite_index = spr_heroIdle ;
-    image_speed = 0.1 ;
+    
+}else if(jump == true &amp;&amp; place_meeting(x, y+1, obj_collisor ) &amp;&amp;  phy_speed_y == 0 &amp;&amp; dashing == false){
+
+      jump = false ;
+      
+}else if(jump == true &amp;&amp; phy_speed_y &lt; 0 &amp;&amp; dashing == false){
+    sprite_index = spr_heroJump ;
+}else if(jump == true &amp;&amp; phy_speed_y &gt;= 0 &amp;&amp; dashing == false){
+    sprite_index = spr_heroFall ;
+    
+}else if(dashing == true){
+    sprite_index = spr_heroDash ;
+    instance_create(x,y, obj_heroClone);
 }else{
     sprite_index = spr_heroIdle ;
-    image_speed = 0.1 ;
+    image_speed =0.1 ;
 }
+    
+
 </string>
           </argument>
         </arguments>
@@ -106,6 +136,8 @@ if(((phy_speed_x &gt; 0.1 &amp;&amp; phy_speed_x &lt; 2) || (phy_speed_x &lt; -0
           <argument>
             <kind>1</kind>
             <string>/// make this happen
+
+
 </string>
           </argument>
         </arguments>
@@ -128,8 +160,10 @@ if(((phy_speed_x &gt; 0.1 &amp;&amp; phy_speed_x &lt; 2) || (phy_speed_x &lt; -0
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>image_xscale = 1 ;
+            <string>if(jump == false) {
+image_xscale = 1 ;
 physics_apply_force(x,y,move_speed, -20);
+}
 </string>
           </argument>
         </arguments>
@@ -152,8 +186,10 @@ physics_apply_force(x,y,move_speed, -20);
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>image_xscale = -1 ;
+            <string>if(jump == false) {
+image_xscale = -1 ;
 physics_apply_force(x,y, -move_speed, -20) ;
+}
 </string>
           </argument>
         </arguments>
@@ -178,6 +214,100 @@ physics_apply_force(x,y, -move_speed, -20) ;
             <kind>1</kind>
             <string>phy_position_x = x_start ;
 phy_position_y = y_start ;
+
+phy_speed_x = 0 ;
+phy_speed_y = 0 ;
+jump_force = min_jump_force ;
+jump = false ;
+dashing = false ;
+
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="9" enumb="68">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>if(dashing == false &amp;&amp; jump == true) {
+
+    image_xscale = 1 ;
+    dashing = true ;
+    phy_speed_x = dash_speed ;
+    
+}
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="9" enumb="65">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>if(dashing == false &amp;&amp; jump == true) {
+
+    image_xscale = -1 ;
+    dashing = true ;
+    phy_speed_x = -dash_speed ;
+    
+}
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="10" enumb="32">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>if(place_meeting(x, y+1, obj_collisor )) {
+
+    jump = true ;
+    physics_apply_impulse(x,y, 0, -jump_force) ;
+    jump_force = min_jump_force ;
+    
+}
 </string>
           </argument>
         </arguments>

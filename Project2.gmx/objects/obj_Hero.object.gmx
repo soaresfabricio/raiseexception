@@ -27,6 +27,7 @@
             <kind>1</kind>
             <string>x_start = x ;
 y_start = y ;
+dir = 1;
 
 phy_fixed_rotation = true ;
 
@@ -68,11 +69,13 @@ acc_level = 0 ;
           <argument>
             <kind>1</kind>
             <string>
-if( keyboard_check(vk_shift) &amp;&amp; dashing == false ) {
+image_xscale = dir;
+
+if( keyboard_check(vk_shift) &amp;&amp; dashing == false) {
     max_xspeed = run_speed ;
 }else if(dashing == true){
     max_xspeed = dash_speed ;
-}else{
+}else if(!jump){
     max_xspeed = 3 ;
 }
 
@@ -108,7 +111,8 @@ if(((phy_speed_x &gt; 0.1 &amp;&amp; phy_speed_x &lt; 2) || (phy_speed_x &lt; -0
     
 }else if(dashing == true){
     sprite_index = spr_heroDash ;
-    instance_create(x,y, obj_heroClone);
+    var inst = instance_create(x,y, obj_heroClone);
+    with(inst) image_xscale = other.dir;
 }else{
     sprite_index = spr_heroIdle ;
     image_speed =0.1 ;
@@ -221,7 +225,7 @@ y_start = y;
           <argument>
             <kind>1</kind>
             <string>if(jump == false) {
-image_xscale = 1 ;
+dir = 1;
 physics_apply_force(x,y,move_speed, -20);
 }
 </string>
@@ -247,7 +251,7 @@ physics_apply_force(x,y,move_speed, -20);
           <argument>
             <kind>1</kind>
             <string>if(jump == false) {
-image_xscale = -1 ;
+dir = -1;
 physics_apply_force(x,y, -move_speed, -20) ;
 }
 </string>
@@ -305,7 +309,7 @@ dashing = false ;
             <kind>1</kind>
             <string>if(dashing == false &amp;&amp; jump == true) {
 
-    image_xscale = 1 ;
+    dir = 1 ;
     dashing = true ;
     phy_speed_x = dash_speed ;
     
@@ -334,7 +338,7 @@ dashing = false ;
             <kind>1</kind>
             <string>if(dashing == false &amp;&amp; jump == true) {
 
-    image_xscale = -1 ;
+    dir = -1 ;
     dashing = true ;
     phy_speed_x = -dash_speed ;
     

@@ -36,6 +36,8 @@ run_speed = 7
 max_xspeed = 3 ;
 
 jump = false ;
+grounded = false ;
+platspeed = 0 ;
 
 min_jump_force = 40
 jump_force = min_jump_force ;
@@ -48,6 +50,41 @@ acc_level = 0 ;
 
 freeze = false ;
 
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="3" enumb="2">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>if(place_meeting(x, y+1, obj_collisor)){
+    grounded = true ;
+    platspeed = obj_collisor.phy_speed_y ;
+    
+    show_debug_message("grounded") ;
+}else{
+    grounded = false ;
+    show_debug_message("on air") ;
+}
+
+if(grounded == true){
+    phy_speed_y = platspeed ;
+}
 </string>
           </argument>
         </arguments>
@@ -129,29 +166,6 @@ if(freeze == true){
 background_y[0] = phy_position_y / 14 ;
     
 
-</string>
-          </argument>
-        </arguments>
-      </action>
-    </event>
-    <event eventtype="4" ename="obj_Vplat">
-      <action>
-        <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string>vspeed = other.vspeed ;
 </string>
           </argument>
         </arguments>

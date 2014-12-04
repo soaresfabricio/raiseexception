@@ -30,6 +30,7 @@
 if( dist &lt;= 32 &amp;&amp; repeater == true){
     if(active == false){
         active = true ;
+        repeater = false ;
        sprite_index = spr_leverActive ;
     }else{
         active = false;

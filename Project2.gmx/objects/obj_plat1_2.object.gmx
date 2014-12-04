@@ -5,7 +5,7 @@
   <visible>-1</visible>
   <depth>0</depth>
   <persistent>0</persistent>
-  <parentName>obj_Bplat</parentName>
+  <parentName>obj_plat</parentName>
   <maskName>&lt;undefined&gt;</maskName>
   <events>
     <event eventtype="0" enumb="0">
@@ -26,6 +26,10 @@
           <argument>
             <kind>1</kind>
             <string>functional = true ;
+xspeed = 0;
+last_x = 0;
+last_y = 0;
+vert = false ;
 </string>
           </argument>
         </arguments>

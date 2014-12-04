@@ -31,6 +31,7 @@
         <sprite>sprites\spr_floatingGround</sprite>
         <sprite>sprites\spr_caveGround1</sprite>
         <sprite>sprites\spr_caveGround2</sprite>
+        <sprite>sprites\spr_caveGround3</sprite>
       </sprites>
     </sprites>
     <sprites name="Platforms">
@@ -81,8 +82,7 @@
         <object>objects\obj_plat1_4</object>
         <object>objects\obj_plat1_2</object>
       </objects>
-      <object>objects\obj_Bplat</object>
-      <object>objects\obj_Vplat</object>
+      <object>objects\obj_plat</object>
     </objects>
     <objects name="Levers">
       <object>objects\obj_lever</object>

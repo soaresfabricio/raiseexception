@@ -5,7 +5,7 @@
   <visible>-1</visible>
   <depth>0</depth>
   <persistent>0</persistent>
-  <parentName>obj_Vplat</parentName>
+  <parentName>obj_plat</parentName>
   <maskName>&lt;undefined&gt;</maskName>
   <events>
     <event eventtype="0" enumb="0">
@@ -26,8 +26,10 @@
           <argument>
             <kind>1</kind>
             <string>mypath = path_start(pth_Platform1_4, 3, 2, false) ;
+xspeed = 0;
 last_x = x;
 last_y = y;
+vert = true ;
 
 </string>
           </argument>

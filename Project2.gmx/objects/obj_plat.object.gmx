@@ -26,6 +26,8 @@
           <argument>
             <kind>1</kind>
             <string>xspeed = 0;
+last_x = x;
+last_y = y;
 </string>
           </argument>
         </arguments>
@@ -50,11 +52,14 @@
             <kind>1</kind>
             <string>dist = point_distance(obj_Hero.x, obj_Hero.y, x, y) ;
 
-if(dist &lt;= 54 &amp;&amp; obj_Hero.grounded == true){
-    obj_Hero.phy_position_y = y -17 ;
 
+if(vert == true){
+
+    if(dist &lt;= 54 &amp;&amp; obj_Hero.grounded == true){
+        obj_Hero.phy_position_y = y -17 ;
+
+    }
 }
-
 </string>
           </argument>
         </arguments>

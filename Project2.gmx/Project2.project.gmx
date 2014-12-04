@@ -4,12 +4,17 @@
     <Config>Configs\Default</Config>
   </Configs>
   <NewExtensions/>
-  <sounds name="sound"/>
+  <sounds name="sound">
+    <sound>sound\sound0</sound>
+  </sounds>
   <sprites name="sprites">
     <sprites name="System">
       <sprite>sprites\spr_collisor</sprite>
+      <sprite>sprites\spr_collisorRamp</sprite>
       <sprite>sprites\spr_checkPoint</sprite>
       <sprite>sprites\spr_redA</sprite>
+      <sprite>sprites\sprite13</sprite>
+      <sprite>sprites\spr_freezer</sprite>
     </sprites>
     <sprites name="hero">
       <sprite>sprites\spr_heroIdle</sprite>
@@ -21,23 +26,43 @@
       <sprite>sprites\spr_heroClone</sprite>
     </sprites>
     <sprites name="Ground">
-      <sprite>sprites\spr_caveGround1</sprite>
-      <sprite>sprites\spr_caveGround2</sprite>
       <sprite>sprites\spr_redGround</sprite>
+      <sprites name="Ground_lvl1">
+        <sprite>sprites\spr_floatingGround</sprite>
+        <sprite>sprites\spr_caveGround1</sprite>
+        <sprite>sprites\spr_caveGround2</sprite>
+      </sprites>
+    </sprites>
+    <sprites name="Platforms">
+      <sprites name="Level 1">
+        <sprite>sprites\spr_PlatformCenter</sprite>
+        <sprite>sprites\spr_PlatformLeft</sprite>
+        <sprite>sprites\spr_PlatformRight</sprite>
+      </sprites>
+    </sprites>
+    <sprites name="Levers">
+      <sprite>sprites\spr_leverIdle</sprite>
+      <sprite>sprites\spr_leverActive</sprite>
     </sprites>
   </sprites>
   <backgrounds name="background">
-    <backgrounds name="Ground">
-      <background>background\background1</background>
-    </backgrounds>
     <background>background\background0</background>
   </backgrounds>
-  <paths name="paths"/>
+  <paths name="paths">
+    <paths name="Paths_lvl1">
+      <path>paths\pth_Platform1_1</path>
+      <path>paths\pth_Platform1_2</path>
+      <path>paths\pth_Platform1_3</path>
+      <path>paths\pth_Platform1_4</path>
+    </paths>
+  </paths>
   <objects name="objects">
     <objects name="System">
       <object>objects\obj_collisor</object>
       <object>objects\obj_checkPoint</object>
       <object>objects\obj_redA</object>
+      <object>objects\obj_collisorRamp</object>
+      <object>objects\obj_freezer</object>
     </objects>
     <objects name="Hero">
       <object>objects\obj_Hero</object>
@@ -47,10 +72,30 @@
       <object>objects\obj_caveGround1</object>
       <object>objects\obj_caveGround2</object>
       <object>objects\obj_redGround</object>
+      <object>objects\obj_floatingGround</object>
+    </objects>
+    <objects name="Moving Platforms">
+      <objects name="Plats_lvl1">
+        <object>objects\obj_plat1_1</object>
+        <object>objects\obj_plat1_3</object>
+        <object>objects\obj_plat1_4</object>
+        <object>objects\obj_plat1_2</object>
+      </objects>
+      <object>objects\obj_Bplat</object>
+      <object>objects\obj_Vplat</object>
+    </objects>
+    <objects name="Levers">
+      <object>objects\obj_lever</object>
+      <objects name="Levers_lvl1">
+        <object>objects\obj_lever1_1</object>
+      </objects>
+    </objects>
+    <objects name="Sounds">
+      <object>objects\obj_sound0</object>
     </objects>
   </objects>
   <rooms name="rooms">
-    <room>rooms\room0</room>
+    <room>rooms\level_1_</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>

@@ -46,6 +46,8 @@ dash_speed = 15 ;
 
 acc_level = 0 ;
 
+freeze = false ;
+
 </string>
           </argument>
         </arguments>
@@ -117,8 +119,68 @@ if(((phy_speed_x &gt; 0.1 &amp;&amp; phy_speed_x &lt; 2) || (phy_speed_x &lt; -0
     sprite_index = spr_heroIdle ;
     image_speed =0.1 ;
 }
+
+if(freeze == true){
+     sprite_index = spr_heroIdle ;
+     image_speed =0.1 ;
+} ;
+
+
+background_y[0] = phy_position_y / 14 ;
     
 
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="4" ename="obj_Vplat">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>vspeed = other.vspeed ;
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="4" ename="obj_freezer">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>freeze = true ;
+
+phy_speed_x = 0 ;
+phy_speed_y = 0 ;
+jump_force = min_jump_force ;
+jump = false ;
+dashing = false ;
 </string>
           </argument>
         </arguments>
@@ -177,6 +239,7 @@ dashing = false ;
             <kind>1</kind>
             <string>x_start = x;
 y_start = y;
+freeze = false ;
 </string>
           </argument>
         </arguments>
@@ -224,7 +287,7 @@ y_start = y;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if(jump == false) {
+            <string>if(jump == false &amp;&amp; freeze == false) {
 dir = 1;
 physics_apply_force(x,y,move_speed, -20);
 }
@@ -250,7 +313,7 @@ physics_apply_force(x,y,move_speed, -20);
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if(jump == false) {
+            <string>if(jump == false &amp;&amp; freeze == false) {
 dir = -1;
 physics_apply_force(x,y, -move_speed, -20) ;
 }
@@ -290,6 +353,38 @@ dashing = false ;
         </arguments>
       </action>
     </event>
+    <event eventtype="9" enumb="82">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>/// return to CP
+
+phy_position_x = x_start ;
+phy_position_y = y_start ;
+
+phy_speed_x = 0 ;
+phy_speed_y = 0 ;
+jump_force = min_jump_force ;
+jump = false ;
+dashing = false ;
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
     <event eventtype="9" enumb="68">
       <action>
         <libid>1</libid>
@@ -307,7 +402,7 @@ dashing = false ;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if(dashing == false &amp;&amp; jump == true) {
+            <string>if(dashing == false &amp;&amp; jump == true &amp;&amp; freeze == false) {
 
     dir = 1 ;
     dashing = true ;
@@ -336,7 +431,7 @@ dashing = false ;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if(dashing == false &amp;&amp; jump == true) {
+            <string>if(dashing == false &amp;&amp; jump == true &amp;&amp; freeze == false) {
 
     dir = -1 ;
     dashing = true ;
@@ -365,7 +460,7 @@ dashing = false ;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if(place_meeting(x, y+1, obj_collisor )) {
+            <string>if(place_meeting(x, y+1, obj_collisor ) &amp;&amp; freeze == false) {
 
     jump = true ;
     physics_apply_impulse(x,y, 0, -jump_force) ;

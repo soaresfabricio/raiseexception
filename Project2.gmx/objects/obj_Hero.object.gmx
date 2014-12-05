@@ -76,10 +76,8 @@ freeze = false ;
     grounded = true ;
     platspeed = obj_collisor.phy_speed_y ;
     
-    show_debug_message("grounded") ;
 }else{
     grounded = false ;
-    show_debug_message("on air") ;
 }
 
 if(grounded == true){

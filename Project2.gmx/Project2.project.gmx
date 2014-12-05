@@ -33,6 +33,7 @@
         <sprite>sprites\spr_caveGround2</sprite>
         <sprite>sprites\spr_caveGround3</sprite>
       </sprites>
+      <sprite>sprites\spr_redCube</sprite>
     </sprites>
     <sprites name="Platforms">
       <sprites name="Level 1">
@@ -45,6 +46,18 @@
       <sprite>sprites\spr_leverIdle</sprite>
       <sprite>sprites\spr_leverActive</sprite>
     </sprites>
+    <sprites name="Cinematic">
+      <sprites name="Cinematic 1">
+        <sprite>sprites\spr_cinematic1</sprite>
+        <sprite>sprites\spr_cinematic2</sprite>
+        <sprite>sprites\spr_cinematic3</sprite>
+        <sprite>sprites\spr_cinematic4</sprite>
+        <sprite>sprites\spr_cinematic5</sprite>
+        <sprite>sprites\spr_cinematic6</sprite>
+        <sprite>sprites\spr_cinematic7</sprite>
+        <sprite>sprites\spr_cinematic8</sprite>
+      </sprites>
+    </sprites>
   </sprites>
   <backgrounds name="background">
     <background>background\background0</background>
@@ -55,6 +68,10 @@
       <path>paths\pth_Platform1_2</path>
       <path>paths\pth_Platform1_3</path>
       <path>paths\pth_Platform1_4</path>
+      <path>paths\pth_Platform1_5</path>
+      <path>paths\pth_Platform1_6</path>
+      <path>paths\pth_Platform1_7</path>
+      <path>paths\pth_redPlat1_1</path>
     </paths>
   </paths>
   <objects name="objects">
@@ -64,6 +81,9 @@
       <object>objects\obj_redA</object>
       <object>objects\obj_collisorRamp</object>
       <object>objects\obj_freezer</object>
+      <objects name="System_lvl1">
+        <object>objects\obj_freezer1_1</object>
+      </objects>
     </objects>
     <objects name="Hero">
       <object>objects\obj_Hero</object>
@@ -74,13 +94,19 @@
       <object>objects\obj_caveGround2</object>
       <object>objects\obj_redGround</object>
       <object>objects\obj_floatingGround</object>
+      <object>objects\object19</object>
+      <object>objects\obj_redCube</object>
     </objects>
     <objects name="Moving Platforms">
       <objects name="Plats_lvl1">
         <object>objects\obj_plat1_1</object>
+        <object>objects\obj_plat1_7</object>
         <object>objects\obj_plat1_3</object>
         <object>objects\obj_plat1_4</object>
         <object>objects\obj_plat1_2</object>
+        <object>objects\obj_plat1_5</object>
+        <object>objects\obj_plat1_6</object>
+        <object>objects\obj_redPlat1_1</object>
       </objects>
       <object>objects\obj_plat</object>
     </objects>
@@ -90,12 +116,13 @@
         <object>objects\obj_lever1_1</object>
       </objects>
     </objects>
-    <objects name="Sounds">
-      <object>objects\obj_sound0</object>
+    <objects name="Cinematic">
+      <object>objects\obj_cinematic1</object>
     </objects>
   </objects>
   <rooms name="rooms">
     <room>rooms\level_1_</room>
+    <room>rooms\cinematic_1</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>

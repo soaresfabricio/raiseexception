@@ -13,8 +13,9 @@
       <sprite>sprites\spr_collisorRamp</sprite>
       <sprite>sprites\spr_checkPoint</sprite>
       <sprite>sprites\spr_redA</sprite>
-      <sprite>sprites\sprite13</sprite>
+      <sprite>sprites\spr_EvtTrigger</sprite>
       <sprite>sprites\spr_freezer</sprite>
+      <sprite>sprites\spr_Warp</sprite>
     </sprites>
     <sprites name="hero">
       <sprite>sprites\spr_heroIdle</sprite>
@@ -34,6 +35,7 @@
         <sprite>sprites\spr_caveGround3</sprite>
       </sprites>
       <sprite>sprites\spr_redCube</sprite>
+      <sprite>sprites\spr_Cube</sprite>
     </sprites>
     <sprites name="Platforms">
       <sprites name="Level 1">
@@ -72,6 +74,8 @@
       <path>paths\pth_Platform1_6</path>
       <path>paths\pth_Platform1_7</path>
       <path>paths\pth_redPlat1_1</path>
+      <path>paths\pth_redPlat1_2</path>
+      <path>paths\pth_redPlat1_3</path>
     </paths>
   </paths>
   <objects name="objects">
@@ -83,7 +87,10 @@
       <object>objects\obj_freezer</object>
       <objects name="System_lvl1">
         <object>objects\obj_freezer1_1</object>
+        <object>objects\obj_EvtTrigger1_1</object>
+        <object>objects\obj_EvtTrigger1_2</object>
       </objects>
+      <object>objects\obj_Warp</object>
     </objects>
     <objects name="Hero">
       <object>objects\obj_Hero</object>
@@ -107,6 +114,12 @@
         <object>objects\obj_plat1_5</object>
         <object>objects\obj_plat1_6</object>
         <object>objects\obj_redPlat1_1</object>
+        <object>objects\obj_redPlat1_2</object>
+        <object>objects\obj_grayPlat1_1</object>
+        <object>objects\obj_grayPlat1_1_2</object>
+        <object>objects\obj_grayPlat1_1_3</object>
+        <object>objects\obj_grayPlat1_1_4</object>
+        <object>objects\obj_grayPlat1_1_5</object>
       </objects>
       <object>objects\obj_plat</object>
     </objects>
@@ -114,6 +127,7 @@
       <object>objects\obj_lever</object>
       <objects name="Levers_lvl1">
         <object>objects\obj_lever1_1</object>
+        <object>objects\obj_lever1_2</object>
       </objects>
     </objects>
     <objects name="Cinematic">
@@ -122,6 +136,7 @@
   </objects>
   <rooms name="rooms">
     <room>rooms\level_1_</room>
+    <room>rooms\level_1_2</room>
     <room>rooms\cinematic_1</room>
   </rooms>
   <help>

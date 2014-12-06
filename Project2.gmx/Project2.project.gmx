@@ -135,8 +135,8 @@
     </objects>
   </objects>
   <rooms name="rooms">
-    <room>rooms\level_1_</room>
     <room>rooms\level_1_2</room>
+    <room>rooms\level_1_</room>
     <room>rooms\cinematic_1</room>
   </rooms>
   <help>

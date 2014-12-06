@@ -155,6 +155,11 @@ if(((phy_speed_x &gt; 0.1 &amp;&amp; phy_speed_x &lt; 2) || (phy_speed_x &lt; -0
     image_speed =0.1 ;
 }
 
+if(grounded == true &amp;&amp; !(keyboard_check(vk_left) || keyboard_check(vk_right)) ){
+    phy_speed_x = 0;
+
+}
+
 if(freeze == true){
      sprite_index = spr_heroIdle ;
      image_speed =0.1 ;

@@ -67,6 +67,7 @@
   </sprites>
   <backgrounds name="background">
     <background>background\background0</background>
+    <background>background\background1</background>
   </backgrounds>
   <paths name="paths">
     <paths name="Paths_lvl1">
@@ -173,9 +174,10 @@
     </objects>
   </objects>
   <rooms name="rooms">
+    <room>rooms\cinematic_1</room>
     <room>rooms\level_1</room>
     <room>rooms\level_1_2</room>
-    <room>rooms\cinematic_1</room>
+    <room>rooms\continua</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>

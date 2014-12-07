@@ -118,7 +118,8 @@ if( keyboard_check(vk_shift) &amp;&amp; dashing == false) {
 }
 
 if(keyboard_check(vk_space) &amp;&amp; jump_force &lt; max_jump_force ) {      
-        jump_force = jump_force  + 0.5;       
+        jump_force = jump_force  + 0.5;
+        draw_set_colour(c_yellow);      
 }
 
 phy_speed_x = max(min(phy_speed_x, max_xspeed), -max_xspeed ) ;
@@ -329,7 +330,7 @@ freeze = false ;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if(jump == false &amp;&amp; freeze == false) {
+            <string>if(jump == false &amp;&amp; freeze == false &amp;&amp; grounded == true) {
 dir = 1;
 physics_apply_force(x,y,move_speed, -20);
 }
@@ -355,7 +356,7 @@ physics_apply_force(x,y,move_speed, -20);
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if(jump == false &amp;&amp; freeze == false) {
+            <string>if(jump == false &amp;&amp; freeze == false &amp;&amp; grounded == true) {
 dir = -1;
 physics_apply_force(x,y, -move_speed, -20) ;
 }
@@ -519,7 +520,7 @@ dashing = false ;
   <PhysicsObjectSensor>0</PhysicsObjectSensor>
   <PhysicsObjectShape>1</PhysicsObjectShape>
   <PhysicsObjectDensity>0.100000001490116</PhysicsObjectDensity>
-  <PhysicsObjectRestitution>0.100000001490116</PhysicsObjectRestitution>
+  <PhysicsObjectRestitution>0</PhysicsObjectRestitution>
   <PhysicsObjectGroup>0</PhysicsObjectGroup>
   <PhysicsObjectLinearDamping>0.300000011920929</PhysicsObjectLinearDamping>
   <PhysicsObjectAngularDamping>0.100000001490116</PhysicsObjectAngularDamping>

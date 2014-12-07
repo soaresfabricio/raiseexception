@@ -79,7 +79,7 @@ if(frame = 8){
 }
 
 if(frame = 9){
-    room_goto(level_1_) ;
+    room_goto_next() ;
 }
 </string>
           </argument>

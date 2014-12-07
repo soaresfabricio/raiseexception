@@ -16,6 +16,7 @@
       <sprite>sprites\spr_EvtTrigger</sprite>
       <sprite>sprites\spr_freezer</sprite>
       <sprite>sprites\spr_Warp</sprite>
+      <sprite>sprites\spr_levelSwapper</sprite>
     </sprites>
     <sprites name="hero">
       <sprite>sprites\spr_heroIdle</sprite>
@@ -25,6 +26,7 @@
       <sprite>sprites\spr_heroFall</sprite>
       <sprite>sprites\spr_heroDash</sprite>
       <sprite>sprites\spr_heroClone</sprite>
+      <sprite>sprites\spr_redId</sprite>
     </sprites>
     <sprites name="Ground">
       <sprite>sprites\spr_redGround</sprite>
@@ -36,6 +38,7 @@
       </sprites>
       <sprite>sprites\spr_redCube</sprite>
       <sprite>sprites\spr_Cube</sprite>
+      <sprite>sprites\spr_checkPointGround</sprite>
     </sprites>
     <sprites name="Platforms">
       <sprites name="Level 1">
@@ -47,6 +50,7 @@
     <sprites name="Levers">
       <sprite>sprites\spr_leverIdle</sprite>
       <sprite>sprites\spr_leverActive</sprite>
+      <sprite>sprites\spr_colorMachine</sprite>
     </sprites>
     <sprites name="Cinematic">
       <sprites name="Cinematic 1">
@@ -76,6 +80,14 @@
       <path>paths\pth_redPlat1_1</path>
       <path>paths\pth_redPlat1_2</path>
       <path>paths\pth_redPlat1_3</path>
+      <paths name="Paths_lvl1_2">
+        <path>paths\pth_Platform1_2_2</path>
+        <path>paths\pth_Platform1_2_3</path>
+        <path>paths\pth_Platform1_2_4</path>
+        <path>paths\pth_Platform1_2_5</path>
+        <path>paths\pth_Platform1_2_6</path>
+        <path>paths\pth_Platform1_2_7</path>
+      </paths>
     </paths>
   </paths>
   <objects name="objects">
@@ -89,8 +101,14 @@
         <object>objects\obj_freezer1_1</object>
         <object>objects\obj_EvtTrigger1_1</object>
         <object>objects\obj_EvtTrigger1_2</object>
+        <object>objects\obj_freezer1_2_1</object>
+        <object>objects\obj_Warp1_1</object>
       </objects>
       <object>objects\obj_Warp</object>
+      <objects name="ColorTimers">
+        <object>objects\obj_redId1</object>
+      </objects>
+      <object>objects\obj_levelSwapper</object>
     </objects>
     <objects name="Hero">
       <object>objects\obj_Hero</object>
@@ -103,6 +121,7 @@
       <object>objects\obj_floatingGround</object>
       <object>objects\object19</object>
       <object>objects\obj_redCube</object>
+      <object>objects\obj_checkPointGround</object>
     </objects>
     <objects name="Moving Platforms">
       <objects name="Plats_lvl1">
@@ -120,23 +139,42 @@
         <object>objects\obj_grayPlat1_1_3</object>
         <object>objects\obj_grayPlat1_1_4</object>
         <object>objects\obj_grayPlat1_1_5</object>
+        <objects name="Plats_lvl1_2">
+          <object>objects\obj_plat1_2_1</object>
+          <object>objects\obj_plat1_2_2</object>
+          <object>objects\obj_plat1_2_3</object>
+          <object>objects\obj_plat1_2_4</object>
+          <object>objects\obj_plat1_2_5</object>
+          <object>objects\obj_plat1_2_6</object>
+          <object>objects\obj_plat1_2_7</object>
+        </objects>
       </objects>
       <object>objects\obj_plat</object>
+      <object>objects\obj_platVisualizer</object>
     </objects>
     <objects name="Levers">
       <object>objects\obj_lever</object>
       <objects name="Levers_lvl1">
         <object>objects\obj_lever1_1</object>
         <object>objects\obj_lever1_2</object>
+        <objects name="Levers_lvl1_2">
+          <object>objects\obj_lever1_2_1</object>
+          <object>objects\obj_lever1_2_2</object>
+          <object>objects\obj_lever1_2_3</object>
+          <object>objects\obj_lever1_2_4</object>
+          <object>objects\obj_lever1_2_5</object>
+          <object>objects\obj_lever1_2_6</object>
+        </objects>
       </objects>
+      <object>objects\obj_redMachine1</object>
     </objects>
     <objects name="Cinematic">
       <object>objects\obj_cinematic1</object>
     </objects>
   </objects>
   <rooms name="rooms">
+    <room>rooms\level_1</room>
     <room>rooms\level_1_2</room>
-    <room>rooms\level_1_</room>
     <room>rooms\cinematic_1</room>
   </rooms>
   <help>

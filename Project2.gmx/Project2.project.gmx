@@ -64,6 +64,15 @@
         <sprite>sprites\spr_cinematic8</sprite>
       </sprites>
     </sprites>
+    <sprites name="menu">
+      <sprite>sprites\spr_raise</sprite>
+      <sprite>sprites\spr_exception</sprite>
+      <sprite>sprites\spr_startActive</sprite>
+      <sprite>sprites\spr_startIdle</sprite>
+      <sprite>sprites\spr_optionActive</sprite>
+      <sprite>sprites\spr_optionIdle</sprite>
+      <sprite>sprites\spr_alpha</sprite>
+    </sprites>
   </sprites>
   <backgrounds name="background">
     <background>background\background0</background>
@@ -172,8 +181,17 @@
     <objects name="Cinematic">
       <object>objects\obj_cinematic1</object>
     </objects>
+    <objects name="menu">
+      <object>objects\obj_raise</object>
+      <object>objects\obj_exception</object>
+      <object>objects\obj_start</object>
+      <object>objects\obj_option</object>
+      <object>objects\obj_alpha</object>
+      <object>objects\obj_mainMenuController</object>
+    </objects>
   </objects>
   <rooms name="rooms">
+    <room>rooms\menu</room>
     <room>rooms\cinematic_1</room>
     <room>rooms\level_1</room>
     <room>rooms\level_1_2</room>

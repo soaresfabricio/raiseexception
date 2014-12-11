@@ -118,7 +118,7 @@ if( keyboard_check(vk_shift) &amp;&amp; dashing == false) {
 }
 
 if(keyboard_check(vk_space) &amp;&amp; jump_force &lt; max_jump_force ) {      
-        jump_force = jump_force  + 0.5;
+        jump_force = jump_force  + (15/room_speed);
         draw_set_colour(c_yellow);      
 }
 

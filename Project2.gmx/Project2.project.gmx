@@ -5,7 +5,7 @@
   </Configs>
   <NewExtensions/>
   <sounds name="sound">
-    <sound>sound\sound0</sound>
+    <sound>sound\The_rise</sound>
   </sounds>
   <sprites name="sprites">
     <sprites name="System">
@@ -73,6 +73,32 @@
       <sprite>sprites\spr_optionIdle</sprite>
       <sprite>sprites\spr_alpha</sprite>
       <sprite>sprites\spr_Intro</sprite>
+    </sprites>
+    <sprites name="Texts">
+      <sprites name="Dialog 1">
+        <sprite>sprites\spr_dialog1_2</sprite>
+        <sprite>sprites\spr_dialog1_1</sprite>
+        <sprite>sprites\spr_dialog1_8</sprite>
+        <sprite>sprites\spr_dialog1_6</sprite>
+        <sprite>sprites\spr_dialog1_7</sprite>
+        <sprite>sprites\spr_dialog1_5</sprite>
+        <sprite>sprites\spr_dialog1_3</sprite>
+        <sprite>sprites\spr_dialog1_4</sprite>
+      </sprites>
+      <sprites name="Dialog 2">
+        <sprite>sprites\spr_dialog2_1</sprite>
+        <sprite>sprites\spr_dialog2_2</sprite>
+        <sprite>sprites\spr_dialog2_3</sprite>
+        <sprite>sprites\spr_dialog2_4</sprite>
+        <sprite>sprites\spr_dialog2_5</sprite>
+        <sprite>sprites\spr_dialog2_6</sprite>
+        <sprite>sprites\spr_dialog2_7</sprite>
+        <sprite>sprites\spr_dialog2_8</sprite>
+        <sprite>sprites\spr_dialog2_9</sprite>
+        <sprite>sprites\spr_dialog2_10</sprite>
+        <sprite>sprites\spr_dialog2_11</sprite>
+        <sprite>sprites\spr_dialog2_12</sprite>
+      </sprites>
     </sprites>
   </sprites>
   <backgrounds name="background">
@@ -190,6 +216,20 @@
       <object>objects\obj_alpha</object>
       <object>objects\obj_mainMenuController</object>
       <object>objects\obj_Intro</object>
+    </objects>
+    <objects name="text">
+      <object>objects\obj_tutorial2</object>
+      <object>objects\obj_tutorial3</object>
+      <object>objects\obj_tutorial4</object>
+      <object>objects\obj_tutorial35</object>
+      <object>objects\obj_tutorial5</object>
+      <object>objects\obj_dialogT1</object>
+      <object>objects\obj_dialogT2</object>
+      <object>objects\obj_dialog1T</object>
+      <object>objects\obj_dialog2T</object>
+    </objects>
+    <objects name="Sound">
+      <object>objects\obj_sound1</object>
     </objects>
   </objects>
   <rooms name="rooms">

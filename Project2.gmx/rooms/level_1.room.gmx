@@ -508,7 +508,7 @@
     <instance objName="obj_caveGround2" x="32" y="3296" name="inst_D375407C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_caveGround2" x="64" y="3296" name="inst_387C1464" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_caveGround2" x="96" y="3296" name="inst_AE881913" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_floatingGround" x="640" y="2816" name="inst_8C76B58B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_floatingGround" x="640" y="2752" name="inst_8C76B58B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_caveGround1" x="288" y="3360" name="inst_7C76AF1F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_caveGround2" x="192" y="3360" name="inst_8DBC5785" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_caveGround2" x="224" y="3360" name="inst_93573404" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
@@ -644,7 +644,7 @@
     <instance objName="obj_collisor" x="1024" y="2688" name="inst_AE6676AB" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_collisor" x="1024" y="2720" name="inst_491CCC8B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_collisor" x="1024" y="2656" name="inst_48012C4A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_collisor" x="608" y="2816" name="inst_537E0D0C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_collisor" x="608" y="2752" name="inst_537E0D0C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_caveGround1" x="768" y="3808" name="inst_7FFA1E36" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_caveGround1" x="704" y="3808" name="inst_6CAF4579" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_caveGround1" x="736" y="3808" name="inst_549B200E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
@@ -765,12 +765,12 @@
     <instance objName="obj_collisor" x="576" y="3072" name="inst_E2F3B04B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_collisor" x="608" y="3072" name="inst_C50994C0" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_collisor" x="640" y="3072" name="inst_E1DC6C32" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_collisor" x="704" y="2816" name="inst_F58E037E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_collisor" x="736" y="2816" name="inst_917C8327" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_collisor" x="672" y="2816" name="inst_9CF52BD3" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_collisor" x="640" y="2816" name="inst_4E7AE252" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_collisor" x="544" y="2816" name="inst_CC807EC6" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_collisor" x="576" y="2816" name="inst_CB615DF5" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_collisor" x="704" y="2752" name="inst_F58E037E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_collisor" x="736" y="2752" name="inst_917C8327" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_collisor" x="672" y="2752" name="inst_9CF52BD3" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_collisor" x="640" y="2752" name="inst_4E7AE252" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_collisor" x="512" y="2752" name="inst_CC807EC6" locked="0" code="" scaleX="0.100000001490116" scaleY="2" colour="4294967295" rotation="0"/>
+    <instance objName="obj_collisor" x="576" y="2752" name="inst_CB615DF5" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_collisor" x="0" y="2400" name="inst_0B544F4D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_collisor" x="0" y="2432" name="inst_1DC3A823" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_collisor" x="0" y="2336" name="inst_EDFBF1EC" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
@@ -902,7 +902,7 @@
     <instance objName="obj_collisor" x="800" y="2240" name="inst_AFBF1449" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_collisor" x="864" y="2176" name="inst_F0186F89" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_caveGround1" x="896" y="2176" name="inst_89B53702" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_Hero" x="160" y="3616" name="inst_274E39A7" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_collisor" x="544" y="2752" name="inst_4D984AF0" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_caveGround2" x="864" y="2240" name="inst_0CA178FD" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_caveGround1" x="864" y="2176" name="inst_95AB4835" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_caveGround2" x="864" y="2208" name="inst_B865AAE2" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
@@ -1918,6 +1918,7 @@
     <instance objName="obj_tutorial35" x="960" y="3392" name="inst_83F9160D" locked="0" code="" scaleX="3" scaleY="3" colour="4294967295" rotation="0"/>
     <instance objName="obj_dialogT2" x="256" y="1312" name="inst_8084F4CC" locked="0" code="" scaleX="3" scaleY="3" colour="4294967295" rotation="0"/>
     <instance objName="obj_sound1" x="192" y="3488" name="inst_7F64324D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_Hero" x="160" y="3648" name="inst_2EE1F909" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>-1</PhysicsWorld>

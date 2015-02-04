@@ -47,7 +47,7 @@ max_jump_force = 80 ;
 dashing = false ;
 dash_speed = 15 ;
 
-acc_level = 0 ;
+acc_level = 1 ;
 
 freeze = false ;
 
@@ -171,6 +171,40 @@ if(freeze == true){
 background_y[0] = phy_position_y / 14 ;
     
 
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="4" ename="obj_orangeA">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>if(acc_level &lt; 2){
+
+phy_position_x = x_start ;
+phy_position_y = y_start ;
+
+phy_speed_x = 0 ;
+phy_speed_y = 0 ;
+jump_force = min_jump_force ;
+jump = false ;
+dashing = false ;
+
+}
 </string>
           </argument>
         </arguments>

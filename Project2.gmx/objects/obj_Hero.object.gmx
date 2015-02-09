@@ -46,8 +46,9 @@ max_jump_force = 80 ;
 
 dashing = false ;
 dash_speed = 15 ;
+bounce_speed = 12 ;
 
-acc_level = 1 ;
+acc_level = 1;
 
 freeze = false ;
 
@@ -84,6 +85,32 @@ freeze = false ;
 if(grounded == true){
     phy_speed_y = platspeed ;
 }
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="3" enumb="1">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>if(place_meeting(x,y,obj_purpleCubeSIDE )){
+    phy_speed_x = -phy_speed_x ;
+}
+
 </string>
           </argument>
         </arguments>
@@ -176,40 +203,6 @@ background_y[0] = phy_position_y / 14 ;
         </arguments>
       </action>
     </event>
-    <event eventtype="4" ename="obj_orangeA">
-      <action>
-        <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string>if(acc_level &lt; 2){
-
-phy_position_x = x_start ;
-phy_position_y = y_start ;
-
-phy_speed_x = 0 ;
-phy_speed_y = 0 ;
-jump_force = min_jump_force ;
-jump = false ;
-dashing = false ;
-
-}
-</string>
-          </argument>
-        </arguments>
-      </action>
-    </event>
     <event eventtype="4" ename="obj_levelSwapper">
       <action>
         <libid>1</libid>
@@ -258,6 +251,40 @@ phy_speed_y = 0 ;
 jump_force = min_jump_force ;
 jump = false ;
 dashing = false ;
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="4" ename="obj_orangeA">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>if(acc_level &lt; 2){
+
+phy_position_x = x_start ;
+phy_position_y = y_start ;
+
+phy_speed_x = 0 ;
+phy_speed_y = 0 ;
+jump_force = min_jump_force ;
+jump = false ;
+dashing = false ;
+
+}
 </string>
           </argument>
         </arguments>
@@ -554,7 +581,7 @@ dashing = false ;
   <PhysicsObjectSensor>0</PhysicsObjectSensor>
   <PhysicsObjectShape>1</PhysicsObjectShape>
   <PhysicsObjectDensity>0.100000001490116</PhysicsObjectDensity>
-  <PhysicsObjectRestitution>0</PhysicsObjectRestitution>
+  <PhysicsObjectRestitution>0.100000001490116</PhysicsObjectRestitution>
   <PhysicsObjectGroup>0</PhysicsObjectGroup>
   <PhysicsObjectLinearDamping>0.300000011920929</PhysicsObjectLinearDamping>
   <PhysicsObjectAngularDamping>0.100000001490116</PhysicsObjectAngularDamping>

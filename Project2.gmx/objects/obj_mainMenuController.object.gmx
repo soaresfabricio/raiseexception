@@ -116,6 +116,7 @@ option = false;
           <argument>
             <kind>1</kind>
             <string>if(start == true){
+    obj_soundMenu.soundM = false ;
     room_goto_next();
 }
 

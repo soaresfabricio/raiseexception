@@ -6,6 +6,7 @@
   <NewExtensions/>
   <sounds name="sound">
     <sound>sound\The_rise</sound>
+    <sound>sound\Enter_the_exception</sound>
   </sounds>
   <sprites name="sprites">
     <sprites name="System">
@@ -37,6 +38,7 @@
       <sprite>sprites\spr_checkPointGround</sprite>
       <sprite>sprites\spr_steelCube</sprite>
       <sprite>sprites\spr_orangeCube</sprite>
+      <sprite>sprites\spr_purpleCube</sprite>
       <sprite>sprites\spr_Cube</sprite>
       <sprites name="Ground_lvl1">
         <sprite>sprites\spr_floatingGround</sprite>
@@ -166,6 +168,8 @@
       <object>objects\obj_redCube</object>
       <object>objects\obj_orangeCube</object>
       <object>objects\obj_steelCube</object>
+      <object>objects\obj_purpleCubeUP</object>
+      <object>objects\obj_purpleCubeSIDE</object>
       <object>objects\obj_checkPointGround</object>
     </objects>
     <objects name="Moving Platforms">
@@ -238,14 +242,15 @@
     </objects>
     <objects name="Sound">
       <object>objects\obj_sound1</object>
+      <object>objects\obj_soundMenu</object>
     </objects>
   </objects>
   <rooms name="rooms">
     <room>rooms\level_2</room>
-    <room>rooms\level_1</room>
     <room>rooms\Intro</room>
     <room>rooms\menu</room>
     <room>rooms\cinematic_1</room>
+    <room>rooms\level_1</room>
     <room>rooms\level_1_2</room>
   </rooms>
   <help>

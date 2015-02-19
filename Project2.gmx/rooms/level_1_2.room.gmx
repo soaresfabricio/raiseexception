@@ -456,7 +456,6 @@
     <instance objName="obj_caveGround2" x="0" y="1184" name="inst_35BC114F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_caveGround2" x="0" y="1120" name="inst_D654B187" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_lever1_2_1" x="768" y="1760" name="inst_15272206" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_freezer1_2_1" x="1056" y="1600" name="inst_A94F1053" locked="0" code="" scaleX="3" scaleY="12" colour="4294967295" rotation="0"/>
     <instance objName="obj_platVisualizer" x="320" y="1568" name="inst_7C6F0E63" locked="0" code="" scaleX="5" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_caveGround2" x="32" y="1472" name="inst_2F51FBE3" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_collisor" x="0" y="1056" name="inst_EC335DD7" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
@@ -802,6 +801,7 @@
     <instance objName="obj_levelSwapper" x="992" y="0" name="inst_A7C7BC1D" locked="0" code="" scaleX="3" scaleY="3" colour="4294967295" rotation="0"/>
     <instance objName="obj_plat1_2_7" x="992" y="1760" name="inst_E141F577" locked="0" code="" scaleX="3" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_Hero" x="96" y="1824" name="inst_918B1BEA" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_sound1" x="64" y="1632" name="inst_71AF3C22" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>-1</PhysicsWorld>

@@ -37,8 +37,10 @@
       <sprite>sprites\spr_redCube</sprite>
       <sprite>sprites\spr_checkPointGround</sprite>
       <sprite>sprites\spr_steelCube</sprite>
+      <sprite>sprites\spr_whiteCube</sprite>
       <sprite>sprites\spr_orangeCube</sprite>
       <sprite>sprites\spr_purpleCube</sprite>
+      <sprite>sprites\spr_greenCube</sprite>
       <sprite>sprites\spr_Cube</sprite>
       <sprites name="Ground_lvl1">
         <sprite>sprites\spr_floatingGround</sprite>
@@ -69,6 +71,14 @@
         <sprite>sprites\spr_cinematic6</sprite>
         <sprite>sprites\spr_cinematic7</sprite>
         <sprite>sprites\spr_cinematic8</sprite>
+      </sprites>
+      <sprites name="Ending">
+        <sprite>sprites\spr_e1</sprite>
+        <sprite>sprites\spr_e2</sprite>
+        <sprite>sprites\spr_e3</sprite>
+        <sprite>sprites\spr_e4</sprite>
+        <sprite>sprites\spr_e5</sprite>
+        <sprite>sprites\spr_e6</sprite>
       </sprites>
     </sprites>
     <sprites name="menu">
@@ -106,11 +116,188 @@
         <sprite>sprites\spr_dialog2_11</sprite>
         <sprite>sprites\spr_dialog2_12</sprite>
       </sprites>
+      <sprites name="lvl 2">
+        <sprites name="D1">
+          <sprite>sprites\spr_211</sprite>
+          <sprite>sprites\spr_212</sprite>
+          <sprite>sprites\spr_213</sprite>
+          <sprite>sprites\spr_214</sprite>
+          <sprite>sprites\spr_215</sprite>
+          <sprite>sprites\spr_216</sprite>
+          <sprite>sprites\spr_217</sprite>
+          <sprite>sprites\spr_218</sprite>
+          <sprite>sprites\spr_219</sprite>
+        </sprites>
+        <sprites name="D2">
+          <sprite>sprites\spr_221</sprite>
+          <sprite>sprites\spr_222</sprite>
+          <sprite>sprites\spr_223</sprite>
+          <sprite>sprites\spr_224</sprite>
+          <sprite>sprites\spr_225</sprite>
+          <sprite>sprites\spr_226</sprite>
+          <sprite>sprites\spr_227</sprite>
+          <sprite>sprites\spr_228</sprite>
+          <sprite>sprites\spr_229</sprite>
+          <sprite>sprites\spr_2210</sprite>
+          <sprite>sprites\spr_2211</sprite>
+          <sprite>sprites\spr_2212</sprite>
+        </sprites>
+        <sprites name="D3">
+          <sprite>sprites\spr_231</sprite>
+          <sprite>sprites\spr_232</sprite>
+          <sprite>sprites\spr_233</sprite>
+          <sprite>sprites\spr_234</sprite>
+          <sprite>sprites\spr_235</sprite>
+          <sprite>sprites\spr_236</sprite>
+          <sprite>sprites\spr_237</sprite>
+          <sprite>sprites\spr_238</sprite>
+          <sprite>sprites\spr_239</sprite>
+        </sprites>
+      </sprites>
+      <sprites name="lvl 3">
+        <sprites name="D1">
+          <sprite>sprites\spr_311</sprite>
+          <sprite>sprites\spr_312</sprite>
+          <sprite>sprites\spr_313</sprite>
+          <sprite>sprites\spr_314</sprite>
+          <sprite>sprites\spr_315</sprite>
+          <sprite>sprites\spr_316</sprite>
+          <sprite>sprites\spr_317</sprite>
+          <sprite>sprites\spr_318</sprite>
+        </sprites>
+        <sprites name="D2">
+          <sprite>sprites\spr_321</sprite>
+          <sprite>sprites\spr_322</sprite>
+          <sprite>sprites\spr_323</sprite>
+          <sprite>sprites\spr_324</sprite>
+          <sprite>sprites\spr_325</sprite>
+          <sprite>sprites\spr_326</sprite>
+          <sprite>sprites\spr_327</sprite>
+          <sprite>sprites\spr_328</sprite>
+          <sprite>sprites\spr_329</sprite>
+          <sprite>sprites\spr_3210</sprite>
+          <sprite>sprites\spr_3211</sprite>
+          <sprite>sprites\spr_3212</sprite>
+          <sprite>sprites\spr_3213</sprite>
+          <sprite>sprites\spr_3214</sprite>
+          <sprite>sprites\spr_3215</sprite>
+        </sprites>
+        <sprites name="D3">
+          <sprite>sprites\spr_331</sprite>
+          <sprite>sprites\spr_332</sprite>
+          <sprite>sprites\spr_333</sprite>
+          <sprite>sprites\spr_334</sprite>
+          <sprite>sprites\spr_335</sprite>
+          <sprite>sprites\spr_336</sprite>
+          <sprite>sprites\spr_337</sprite>
+          <sprite>sprites\spr_338</sprite>
+          <sprite>sprites\spr_339</sprite>
+          <sprite>sprites\spr_3310</sprite>
+          <sprite>sprites\spr_3311</sprite>
+          <sprite>sprites\spr_3312</sprite>
+          <sprite>sprites\spr_3313</sprite>
+        </sprites>
+      </sprites>
+      <sprites name="lvl 4">
+        <sprites name="D1">
+          <sprite>sprites\spr_411</sprite>
+          <sprite>sprites\spr_412</sprite>
+          <sprite>sprites\spr_413</sprite>
+          <sprite>sprites\spr_414</sprite>
+          <sprite>sprites\spr_415</sprite>
+          <sprite>sprites\spr_416</sprite>
+          <sprite>sprites\spr_417</sprite>
+          <sprite>sprites\spr_418</sprite>
+          <sprite>sprites\spr_419</sprite>
+          <sprite>sprites\spr_4110</sprite>
+          <sprite>sprites\spr_4111</sprite>
+          <sprite>sprites\spr_4112</sprite>
+        </sprites>
+        <sprites name="D2">
+          <sprite>sprites\spr_421</sprite>
+          <sprite>sprites\spr_422</sprite>
+          <sprite>sprites\spr_423</sprite>
+          <sprite>sprites\spr_424</sprite>
+          <sprite>sprites\spr_425</sprite>
+          <sprite>sprites\spr_426</sprite>
+          <sprite>sprites\spr_427</sprite>
+          <sprite>sprites\spr_428</sprite>
+          <sprite>sprites\spr_429</sprite>
+          <sprite>sprites\spr_4210</sprite>
+          <sprite>sprites\spr_4211</sprite>
+          <sprite>sprites\spr_4212</sprite>
+          <sprite>sprites\spr_4213</sprite>
+          <sprite>sprites\spr_4214</sprite>
+        </sprites>
+        <sprites name="D3">
+          <sprite>sprites\spr_431</sprite>
+          <sprite>sprites\spr_432</sprite>
+          <sprite>sprites\spr_433</sprite>
+          <sprite>sprites\spr_434</sprite>
+          <sprite>sprites\spr_435</sprite>
+          <sprite>sprites\spr_436</sprite>
+          <sprite>sprites\spr_437</sprite>
+          <sprite>sprites\spr_438</sprite>
+        </sprites>
+      </sprites>
+      <sprites name="lvl 5">
+        <sprite>sprites\spr_51</sprite>
+        <sprite>sprites\spr_52</sprite>
+        <sprite>sprites\spr_53</sprite>
+        <sprite>sprites\spr_54</sprite>
+        <sprite>sprites\spr_55</sprite>
+        <sprite>sprites\spr_56</sprite>
+        <sprite>sprites\spr_57</sprite>
+        <sprite>sprites\spr_58</sprite>
+        <sprite>sprites\spr_59</sprite>
+        <sprite>sprites\spr_510</sprite>
+        <sprite>sprites\spr_511</sprite>
+        <sprite>sprites\spr_512</sprite>
+        <sprite>sprites\spr_513</sprite>
+        <sprite>sprites\spr_514</sprite>
+        <sprite>sprites\spr_515</sprite>
+        <sprite>sprites\spr_516</sprite>
+        <sprite>sprites\spr_517</sprite>
+        <sprite>sprites\spr_518</sprite>
+        <sprite>sprites\spr_519</sprite>
+        <sprite>sprites\spr_520</sprite>
+        <sprite>sprites\spr_521</sprite>
+        <sprite>sprites\spr_522</sprite>
+        <sprite>sprites\spr_523</sprite>
+        <sprite>sprites\spr_524</sprite>
+      </sprites>
+    </sprites>
+    <sprite>sprites\spr_bullet</sprite>
+    <sprites name="Ending">
+      <sprite>sprites\spr_deepStone</sprite>
+      <sprite>sprites\spr_vines1</sprite>
+      <sprite>sprites\spr_vines2</sprite>
+      <sprite>sprites\spr_caveDeepness</sprite>
+      <sprite>sprites\spr_caveInsideBorder</sprite>
+      <sprite>sprites\spr_caveOutsideBorder</sprite>
+      <sprite>sprites\spr_caveOEndBorder</sprite>
+      <sprite>sprites\spr_caveIEndBorder</sprite>
+      <sprite>sprites\spr_rockGrass</sprite>
+      <sprite>sprites\spr_bareRock</sprite>
+      <sprite>sprites\spr_backgroundColor</sprite>
+      <sprite>sprites\spr_backgroundPlant1</sprite>
+      <sprite>sprites\spr_backgroundPlant2</sprite>
+      <sprite>sprites\spr_backgroundPlant3</sprite>
+      <sprite>sprites\spr_backgroundPlant4</sprite>
+      <sprite>sprites\spr_backgroundPlant5</sprite>
+      <sprite>sprites\spr_backgroundPlant6</sprite>
+      <sprite>sprites\spr_backgroundPlant7</sprite>
+      <sprite>sprites\spr_backgroundPlant8</sprite>
+      <sprite>sprites\spr_backgroundPlant9</sprite>
+      <sprite>sprites\spr_plantDeepness</sprite>
+      <sprite>sprites\spr_grass</sprite>
     </sprites>
   </sprites>
   <backgrounds name="background">
     <background>background\background0</background>
     <background>background\background1</background>
+    <background>background\background4</background>
+    <background>background\background3</background>
   </backgrounds>
   <paths name="paths">
     <paths name="Paths_lvl1">
@@ -133,8 +320,26 @@
         <path>paths\pth_Platform1_2_7</path>
       </paths>
     </paths>
+    <paths name="Paths_lvl3">
+      <path>paths\pth_Platform3_1</path>
+    </paths>
+    <paths name="Paths_lvl4">
+      <path>paths\pth_whiteDoor1</path>
+      <path>paths\pth_closeDoor1</path>
+    </paths>
   </paths>
   <objects name="objects">
+    <objects name="bullets">
+      <object>objects\obj_greenCubeU60_5</object>
+      <object>objects\obj_greenCubeU120_5</object>
+      <object>objects\obj_greenCubeD60_5</object>
+      <object>objects\obj_greenCubeR60_5</object>
+      <object>objects\obj_greenCubeR120_7</object>
+      <object>objects\obj_greenCubeL60_5</object>
+      <object>objects\obj_greenCubeL120_7</object>
+      <object>objects\obj_greenCubeL150_7</object>
+      <object>objects\obj_bullet</object>
+    </objects>
     <objects name="System">
       <object>objects\obj_collisor</object>
       <object>objects\obj_checkPoint</object>
@@ -148,6 +353,7 @@
         <object>objects\obj_EvtTrigger1_2</object>
         <object>objects\obj_freezer1_2_1</object>
         <object>objects\obj_Warp1_1</object>
+        <object>objects\obj_Warp2</object>
       </objects>
       <object>objects\obj_Warp</object>
       <objects name="ColorTimers">
@@ -168,9 +374,33 @@
       <object>objects\obj_redCube</object>
       <object>objects\obj_orangeCube</object>
       <object>objects\obj_steelCube</object>
-      <object>objects\obj_purpleCubeUP</object>
+      <object>objects\obj_whiteCube</object>
       <object>objects\obj_purpleCubeSIDE</object>
       <object>objects\obj_checkPointGround</object>
+      <objects name="Ending">
+        <object>objects\obj_bareRock</object>
+        <object>objects\obj_caveDeepness</object>
+        <object>objects\obj_rockGrass</object>
+        <object>objects\obj__grass</object>
+        <object>objects\obj_deepStone</object>
+        <object>objects\obj_caveInsideBorder</object>
+        <object>objects\obj_caveOutsideBorder</object>
+        <object>objects\obj_caveIEndBorder</object>
+        <object>objects\obj_caveOEndBorder</object>
+        <object>objects\obj_vines2</object>
+        <object>objects\obj_vines1</object>
+        <object>objects\obj_backgroundColor</object>
+        <object>objects\obj_backgroundPlant1</object>
+        <object>objects\obj_backgroundPlant2</object>
+        <object>objects\obj_backgroundPlant3</object>
+        <object>objects\obj_backgroundPlant4</object>
+        <object>objects\obj_backgroundPlant5</object>
+        <object>objects\obj_backgroundPlant6</object>
+        <object>objects\obj_backgroundPlant7</object>
+        <object>objects\obj_backgroundPlant8</object>
+        <object>objects\obj_backgroundPlant9</object>
+        <object>objects\obj_PplantDeepness</object>
+      </objects>
     </objects>
     <objects name="Moving Platforms">
       <objects name="Plats_lvl1">
@@ -200,6 +430,22 @@
       </objects>
       <object>objects\obj_plat</object>
       <object>objects\obj_platVisualizer</object>
+      <objects name="Plats_lvl3">
+        <object>objects\obj_redPlat3</object>
+      </objects>
+      <objects name="Plats_lvl 4">
+        <object>objects\obj_whiteDoor1</object>
+        <object>objects\obj_whiteDoor1_2</object>
+        <object>objects\obj_whiteDoor1_3</object>
+        <object>objects\obj_whiteDoor2</object>
+        <object>objects\obj_whiteDoor2_2</object>
+        <object>objects\obj_whiteDoor2_3</object>
+        <object>objects\obj_whiteDoor3</object>
+        <object>objects\obj_whiteDoor3_2</object>
+        <object>objects\obj_whiteDoor3_3</object>
+        <object>objects\obj_AccDoor3</object>
+        <object>objects\obj_CloserDoor3</object>
+      </objects>
     </objects>
     <objects name="Levers">
       <object>objects\obj_lever</object>
@@ -230,15 +476,45 @@
       <object>objects\obj_Intro</object>
     </objects>
     <objects name="text">
-      <object>objects\obj_tutorial2</object>
-      <object>objects\obj_tutorial3</object>
-      <object>objects\obj_tutorial4</object>
-      <object>objects\obj_tutorial35</object>
-      <object>objects\obj_tutorial5</object>
-      <object>objects\obj_dialogT1</object>
-      <object>objects\obj_dialogT2</object>
-      <object>objects\obj_dialog1T</object>
-      <object>objects\obj_dialog2T</object>
+      <objects name="lvl1">
+        <object>objects\obj_tutorial2</object>
+        <object>objects\obj_dialogT2</object>
+        <object>objects\obj_tutorial3</object>
+        <object>objects\obj_tutorial5</object>
+        <object>objects\obj_tutorial35</object>
+        <object>objects\obj_dialogT1</object>
+        <object>objects\obj_tutorial4</object>
+        <object>objects\obj_dialog1T</object>
+        <object>objects\obj_dialog2T</object>
+      </objects>
+      <objects name="lvl2">
+        <object>objects\obj_dialog2_1</object>
+        <object>objects\obj_dialog2_1T</object>
+        <object>objects\obj_dialog2_2</object>
+        <object>objects\obj_dialog2_2T</object>
+        <object>objects\obj_dialog2_3</object>
+        <object>objects\obj_dialog2_3T</object>
+      </objects>
+      <objects name="lvl3">
+        <object>objects\obj_dialog3_1</object>
+        <object>objects\obj_dialog3_1T</object>
+        <object>objects\obj_dialog3_2</object>
+        <object>objects\obj_dialog3_2T</object>
+        <object>objects\obj_dialog3_3</object>
+        <object>objects\obj_dialog3_3T</object>
+      </objects>
+      <objects name="lvl4">
+        <object>objects\obj_dialog4_1</object>
+        <object>objects\obj_dialog4_1T</object>
+        <object>objects\obj_dialog4_2</object>
+        <object>objects\obj_dialog4_2T</object>
+        <object>objects\obj_dialog4_3</object>
+        <object>objects\obj_dialog4_3T</object>
+      </objects>
+      <objects name="lvl 5">
+        <object>objects\spr_dialog5</object>
+        <object>objects\obj_ending</object>
+      </objects>
     </objects>
     <objects name="Sound">
       <object>objects\obj_sound1</object>
@@ -246,12 +522,15 @@
     </objects>
   </objects>
   <rooms name="rooms">
-    <room>rooms\level_2</room>
+    <room>rooms\level_5</room>
     <room>rooms\Intro</room>
     <room>rooms\menu</room>
     <room>rooms\cinematic_1</room>
     <room>rooms\level_1</room>
     <room>rooms\level_1_2</room>
+    <room>rooms\level_2</room>
+    <room>rooms\level_3</room>
+    <room>rooms\level_4</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>

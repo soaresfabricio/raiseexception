@@ -48,7 +48,7 @@ dashing = false ;
 dash_speed = 15 ;
 bounce_speed = 12 ;
 
-acc_level = 1;
+acc_level = 0;
 
 freeze = false ;
 

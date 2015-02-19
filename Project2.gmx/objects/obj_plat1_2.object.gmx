@@ -54,7 +54,7 @@ vert = false ;
             <kind>1</kind>
             <string>if(functional == true &amp;&amp; obj_lever1_1.active == true){
 
-mypath= path_start(pth_Platform1_2, 2, 0, false ) ;
+mypath= path_start(pth_Platform1_2, 4, 0, false ) ;
 functional = false ;
 
 }
